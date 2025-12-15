@@ -59,4 +59,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-        publish-profile: ${{ secrets.GITHUB_PROVIDER_AUTHENTICATION_SECRET }} # Remove publish-profile to use Azure RBAC
+        publish-profile: ${{ secrets.AZURE_ASPNETCORE_TEST_TCS }} # Remove publish-profile to use Azure RBAC
